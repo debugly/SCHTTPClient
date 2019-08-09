@@ -1,0 +1,21 @@
+PODS:
+  - SCHTTPClient (0.1.0):
+    - SCHTTPClient/Client (= 0.1.0)
+    - SCHTTPClient/LibCurl (= 0.1.0)
+  - SCHTTPClient/Client (0.1.0):
+    - SCHTTPClient/LibCurl
+  - SCHTTPClient/LibCurl (0.1.0)
+
+DEPENDENCIES:
+  - SCHTTPClient (from `../../`)
+
+EXTERNAL SOURCES:
+  SCHTTPClient:
+    :path: "../../"
+
+SPEC CHECKSUMS:
+  SCHTTPClient: 120783414468820eaf7dad67844ad2c06df15e0f
+
+PODFILE CHECKSUM: 792aef1e6d920c8272839ed1e665074f07f3752f
+
+COCOAPODS: 1.7.5

@@ -1,0 +1,839 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0434D33C8E11E38D90DCDE16D0075DDE /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C719A84958CE47F8CB2E6E5911E29A /* Cocoa.framework */; };
+		18ABD8AAB068715A6F84B460A93F22AA /* SCHTTPRequestContext.m in Sources */ = {isa = PBXBuildFile; fileRef = CD7A970EC25F9DF40C31E1741E136A94 /* SCHTTPRequestContext.m */; };
+		3877D4076F0508669EC787D1158FFA39 /* SCJSONParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 51C901362BA6A514EE7898BBE8367533 /* SCJSONParser.m */; };
+		3DADC88735FB538804D8E75ACD86E906 /* mprintf.h in Headers */ = {isa = PBXBuildFile; fileRef = A9079682DE7F6580898649828AEC0642 /* mprintf.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40F0725C17100198CE43C1F2B8A901AA /* SCHTTPRequest+Convenience.m in Sources */ = {isa = PBXBuildFile; fileRef = B042A47533DE213E22DEDB1690A254A9 /* SCHTTPRequest+Convenience.m */; };
+		433438B920D136F8F9E9CD07618D2CD0 /* SCHTTPToStringConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 80A7F71322FDC37335A30B173BE102A0 /* SCHTTPToStringConverter.m */; };
+		4FA08AD5C4C532CA842781B9CB6BCD60 /* SCHTTP.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A9E9D97BA785FA06E3240204938ACE /* SCHTTP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		503439E5F2F247969FD1B2D250823832 /* SCHTTPFileWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1BC2CE9B503AA49E108C5D0CFA5ECE /* SCHTTPFileWriter.m */; };
+		512659BEA0BFCF8795CFE26913405FFD /* SCHTTPRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = C010E0FC482D0E056F827B6E7F27A870 /* SCHTTPRequest.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		550A78FA1D2A63D825EF656392BB226D /* multi.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EEA3215EF11C9546F43C1B399B813B5 /* multi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5939476DE070736200426C8AB0A0C831 /* SCHTTPRequest+Convenience.h in Headers */ = {isa = PBXBuildFile; fileRef = EF97D3DDB0D528455A721107E8896BB7 /* SCHTTPRequest+Convenience.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CBCC1936FA06E42807F7E34458C5C4B /* curlver.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E280DC60BE38379040B2B23F50981A0 /* curlver.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E24A490A301B30B7AD0120F0F84390C /* SCHTTPExecutor.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D465C523DCC14A4688EFA070A1F9D20 /* SCHTTPExecutor.m */; };
+		5F2F9C73C422EAB99A48C7182F900A29 /* curl.h in Headers */ = {isa = PBXBuildFile; fileRef = AADE1ACD47E194C73FB9B73278D564FB /* curl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F551FA84C0DDEC49751A5136F1D7242 /* SCHTTPResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 19E58814F7DDB9D9646AF2825832BD8C /* SCHTTPResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FB87F63510C1E866EFB9444A7B6C913 /* system.h in Headers */ = {isa = PBXBuildFile; fileRef = EA94AAC95D6BA8FD639C92CF5E09434D /* system.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63D6D9D95032D838D3A5F5104784365F /* SCHTTPImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = F6EC41D751500E4C21509FCE249B6A70 /* SCHTTPImageDecoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		656A86611A2069561A398ABB6248395C /* SCHTTPRequestInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = A8A7542655486E2290F38C8BD56E9716 /* SCHTTPRequestInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		680929989D26708260E1ED423B25BF7E /* SCHTTPClient-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CFF820A48C3E281A120F7CBDB91FF0 /* SCHTTPClient-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B266AF1245CC773EB63D59622F029C7 /* SCHTTPStreamWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8078110674BB3B79338569A245FFB517 /* SCHTTPStreamWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6C5F17B3A04550AF2E97C7AD2DC9E874 /* SCHTTPAccumulator.m in Sources */ = {isa = PBXBuildFile; fileRef = 55D54E4D810C770B972CF8D02DBBE868 /* SCHTTPAccumulator.m */; };
+		7428F41CE26107D987E342FF4F30EA5A /* Pods-Sample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A03CD5534147A9FD92A24DF4B311437 /* Pods-Sample-dummy.m */; };
+		76308734F38E26848A8AAC89C1A9A401 /* CoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 69F075C9646404C86E663E09F1BA53B2 /* CoreServices.framework */; };
+		77CE641C333B5D929B8946E6A304E790 /* SCHTTPToStringConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 041B44F7F0B5D801A78C5FEF8AD71077 /* SCHTTPToStringConverter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7878AC90165DDF40571523B064D31B84 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAE2E068BE69B34ABDBB0533BE4EEEFD /* Security.framework */; };
+		7BE0400413BB12221597D6389C3463E1 /* SCHTTPRequestContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 9453CDABC3F6105CEA72E02C263246C3 /* SCHTTPRequestContext.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		7F12CA1B9979B9886023138894BDECC6 /* SCHTTPExecutor.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F9C0A4181DF623D20FFE850B05FA559 /* SCHTTPExecutor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		863F659B55E007BE0276DF66FA1C3083 /* SCHTTPUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = AF92520DFE0F6C81E0D0C46383347AF8 /* SCHTTPUtils.m */; };
+		8672D9EDE010BF828108D196E10EECA3 /* easy.h in Headers */ = {isa = PBXBuildFile; fileRef = 1F23A9B6A796C5F9FA4A13A9017A77AF /* easy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		924E7C61AB8BA66EEAFD11A7DDDC4C36 /* SCHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 8047EA8ED7B76B00337B70C88DC3C8BE /* SCHTTPResponse.m */; };
+		9ADB7632DB2919C320DD6FB7C4543C00 /* SCHTTPAccumulator.h in Headers */ = {isa = PBXBuildFile; fileRef = 9707A789C17CE99477CF785154126C7C /* SCHTTPAccumulator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C6B6DD7ABA7874713676A3A2EF4C21C /* SCJSONDictionary.h in Headers */ = {isa = PBXBuildFile; fileRef = 9F8F6C2C24ADA3173A1B2B109E70D4F0 /* SCJSONDictionary.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		A1355F47E696986E73D03F9D5095062B /* SCHTTPClient-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D49C5124EE756FE41B4524CB9D215E49 /* SCHTTPClient-dummy.m */; };
+		A7EDB0459DD2C993589BF3BB52CF32E4 /* Pods-Sample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 859A9C3FF8DAF43611B7457FC86B0142 /* Pods-Sample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEA710EDEACB44E57F62BAF54A6B57CD /* SCJSONDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF447675734403B0BCED3A583B0F735 /* SCJSONDictionary.m */; };
+		BA5D9416A8DB776670607BE38CF70BA4 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0C719A84958CE47F8CB2E6E5911E29A /* Cocoa.framework */; };
+		BB3E74F89F4CC429AEFFF1B82E0B5C51 /* stdcheaders.h in Headers */ = {isa = PBXBuildFile; fileRef = 35C228D36C32494C208A7D0DF3DAD020 /* stdcheaders.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC126D45B4F71F41F318B1438ECD48C /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9215C3CB02FFF1C1E99FB597C3A19CEE /* AppKit.framework */; };
+		BC83795A827F42F55506CBC84AA61684 /* SCHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C34343D7FF57ED0DE66026834586242B /* SCHTTPRequest.m */; };
+		C81FB91126D8E0C48EBCDFDEC234A6BC /* SCHTTPFileWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E286428160CE3CBD6BCB62D3A0EF2D /* SCHTTPFileWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBD7A87FB9CA5B091BEFACB8A7C69054 /* SCHTTPContentHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 089734BEB74A82B92FEBA498CA8DD926 /* SCHTTPContentHandler.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD1CE643FEC9CDD1D4260732E3A91719 /* SCHTTPRequest+PrivateInterface.h in Headers */ = {isa = PBXBuildFile; fileRef = 8691A8FD54DEC8D5E48C39CC1528AD68 /* SCHTTPRequest+PrivateInterface.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E34102722282843E3757AB62A55910CF /* SCHTTPUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = F367295CDDF87027FA7045EC3669C15B /* SCHTTPUtils.h */; settings = {ATTRIBUTES = (Private, ); }; };
+		E493493A047CF5B4B4BBC7931068FAAC /* SCHTTPSelectiveDiscarder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4A8AB3A3DE09B416488D24120CC73DE0 /* SCHTTPSelectiveDiscarder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E6EC398EFDC62D2B43BB47E089F3B08C /* SCHTTPRequest+PrivateInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = A673459DFA11C90ECBE7DD208AB76E13 /* SCHTTPRequest+PrivateInterface.m */; };
+		E9094F81C3D07E0D5393B7197105BB8B /* SCJSONParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EC166EB271DB899BA035B0B7E934C30 /* SCJSONParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F12854E251304E238CA7758264E5B6B4 /* SCHTTPImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C8A6B31DA7146595151B84F5B504514 /* SCHTTPImageDecoder.m */; };
+		F5670F369949DDE5C3AD1201E38ED2AB /* SCHTTPSelectiveDiscarder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4219D428BCAAECC1D474B4DABFDBCAFA /* SCHTTPSelectiveDiscarder.m */; };
+		FF6C51CFD9822F43416C7696A311091E /* SCHTTPStreamWriter.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3513EDF7061B656D7C8F4FA2B58598 /* SCHTTPStreamWriter.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DF774D9A15C6DACE60FAA47C434F199 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9E25F7C35EDD2CA622350C52E21332FD;
+			remoteInfo = SCHTTPClient;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		041B44F7F0B5D801A78C5FEF8AD71077 /* SCHTTPToStringConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPToStringConverter.h; sourceTree = "<group>"; };
+		0747D9D5858F29EA422D73F5D8FF2500 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		089734BEB74A82B92FEBA498CA8DD926 /* SCHTTPContentHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPContentHandler.h; sourceTree = "<group>"; };
+		0B1692077B2B61C40A9D996692389C86 /* Pods-Sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.release.xcconfig"; sourceTree = "<group>"; };
+		0EEA3215EF11C9546F43C1B399B813B5 /* multi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = multi.h; path = External/libcurl.OSX/multi.h; sourceTree = "<group>"; };
+		19E58814F7DDB9D9646AF2825832BD8C /* SCHTTPResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCHTTPResponse.h; path = SCHTTPClient/SCHTTPResponse.h; sourceTree = "<group>"; };
+		1F23A9B6A796C5F9FA4A13A9017A77AF /* easy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = easy.h; path = External/libcurl.OSX/easy.h; sourceTree = "<group>"; };
+		2758D511BFD32F37BFB000D5C5C1B20E /* SCHTTPClient.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SCHTTPClient.modulemap; sourceTree = "<group>"; };
+		2C1BC2CE9B503AA49E108C5D0CFA5ECE /* SCHTTPFileWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPFileWriter.m; sourceTree = "<group>"; };
+		2C8A6B31DA7146595151B84F5B504514 /* SCHTTPImageDecoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPImageDecoder.m; sourceTree = "<group>"; };
+		31E286428160CE3CBD6BCB62D3A0EF2D /* SCHTTPFileWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPFileWriter.h; sourceTree = "<group>"; };
+		35C228D36C32494C208A7D0DF3DAD020 /* stdcheaders.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = stdcheaders.h; path = External/libcurl.OSX/stdcheaders.h; sourceTree = "<group>"; };
+		360EFF6242DFBC11DC0372680C8F0239 /* SCHTTPClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SCHTTPClient.framework; path = SCHTTPClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DF87CDBF351C0A5F8589E22A0F52C54 /* Pods-Sample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Sample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3E7962AD0109EB62A064C2A1823CD4F6 /* SCHTTPClient-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SCHTTPClient-Info.plist"; sourceTree = "<group>"; };
+		3F4CECDA38C08BEAE89304FAF8F47441 /* Pods-Sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Sample.debug.xcconfig"; sourceTree = "<group>"; };
+		3F9C0A4181DF623D20FFE850B05FA559 /* SCHTTPExecutor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCHTTPExecutor.h; path = SCHTTPClient/SCHTTPExecutor.h; sourceTree = "<group>"; };
+		4219D428BCAAECC1D474B4DABFDBCAFA /* SCHTTPSelectiveDiscarder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPSelectiveDiscarder.m; sourceTree = "<group>"; };
+		44053E42CB60A20133DF16CEB2B915AB /* Pods-Sample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-acknowledgements.plist"; sourceTree = "<group>"; };
+		46D66FBB724693B89247CC78286D13F4 /* Pods_Sample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Sample.framework; path = "Pods-Sample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8AB3A3DE09B416488D24120CC73DE0 /* SCHTTPSelectiveDiscarder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPSelectiveDiscarder.h; sourceTree = "<group>"; };
+		51C901362BA6A514EE7898BBE8367533 /* SCJSONParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCJSONParser.m; sourceTree = "<group>"; };
+		55D54E4D810C770B972CF8D02DBBE868 /* SCHTTPAccumulator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPAccumulator.m; sourceTree = "<group>"; };
+		5FCE32D31FA642417B74F37BB0D65AFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		69F075C9646404C86E663E09F1BA53B2 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/CoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		6D03612A2BEF75E30F48CAB588E3CD25 /* libcurl.OSX.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libcurl.OSX.a; path = External/libcurl.OSX/libcurl.OSX.a; sourceTree = "<group>"; };
+		76CFF820A48C3E281A120F7CBDB91FF0 /* SCHTTPClient-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCHTTPClient-umbrella.h"; sourceTree = "<group>"; };
+		7EC166EB271DB899BA035B0B7E934C30 /* SCJSONParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCJSONParser.h; sourceTree = "<group>"; };
+		7FF447675734403B0BCED3A583B0F735 /* SCJSONDictionary.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCJSONDictionary.m; sourceTree = "<group>"; };
+		8047EA8ED7B76B00337B70C88DC3C8BE /* SCHTTPResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCHTTPResponse.m; path = SCHTTPClient/SCHTTPResponse.m; sourceTree = "<group>"; };
+		8078110674BB3B79338569A245FFB517 /* SCHTTPStreamWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPStreamWriter.h; sourceTree = "<group>"; };
+		80A7F71322FDC37335A30B173BE102A0 /* SCHTTPToStringConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPToStringConverter.m; sourceTree = "<group>"; };
+		859A9C3FF8DAF43611B7457FC86B0142 /* Pods-Sample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Sample-umbrella.h"; sourceTree = "<group>"; };
+		85BC69FD900ABE8614E1B3958D4906D0 /* index.md */ = {isa = PBXFileReference; includeInIndex = 1; name = index.md; path = Docs/index.md; sourceTree = "<group>"; };
+		85E691C0024271E2D0092FA1EBACE452 /* Pods-Sample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Sample.modulemap"; sourceTree = "<group>"; };
+		8691A8FD54DEC8D5E48C39CC1528AD68 /* SCHTTPRequest+PrivateInterface.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCHTTPRequest+PrivateInterface.h"; sourceTree = "<group>"; };
+		91E428148E99E51283A9E548CB926D23 /* SCHTTPClient.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = SCHTTPClient.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9215C3CB02FFF1C1E99FB597C3A19CEE /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		9453CDABC3F6105CEA72E02C263246C3 /* SCHTTPRequestContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPRequestContext.h; sourceTree = "<group>"; };
+		96A9E9D97BA785FA06E3240204938ACE /* SCHTTP.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCHTTP.h; path = SCHTTPClient/SCHTTP.h; sourceTree = "<group>"; };
+		9707A789C17CE99477CF785154126C7C /* SCHTTPAccumulator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPAccumulator.h; sourceTree = "<group>"; };
+		9A03CD5534147A9FD92A24DF4B311437 /* Pods-Sample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Sample-dummy.m"; sourceTree = "<group>"; };
+		9AB35F64666C379279CD93A9FF22ED5D /* Pods-Sample-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Sample-Info.plist"; sourceTree = "<group>"; };
+		9D465C523DCC14A4688EFA070A1F9D20 /* SCHTTPExecutor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCHTTPExecutor.m; path = SCHTTPClient/SCHTTPExecutor.m; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E280DC60BE38379040B2B23F50981A0 /* curlver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curlver.h; path = External/libcurl.OSX/curlver.h; sourceTree = "<group>"; };
+		9EB459E21979AD1C5F6722039455CBDE /* SCHTTPClient-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SCHTTPClient-prefix.pch"; sourceTree = "<group>"; };
+		9F8F6C2C24ADA3173A1B2B109E70D4F0 /* SCJSONDictionary.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCJSONDictionary.h; sourceTree = "<group>"; };
+		A673459DFA11C90ECBE7DD208AB76E13 /* SCHTTPRequest+PrivateInterface.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCHTTPRequest+PrivateInterface.m"; sourceTree = "<group>"; };
+		A8A7542655486E2290F38C8BD56E9716 /* SCHTTPRequestInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPRequestInternal.h; sourceTree = "<group>"; };
+		A9079682DE7F6580898649828AEC0642 /* mprintf.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mprintf.h; path = External/libcurl.OSX/mprintf.h; sourceTree = "<group>"; };
+		AADE1ACD47E194C73FB9B73278D564FB /* curl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = curl.h; path = External/libcurl.OSX/curl.h; sourceTree = "<group>"; };
+		AF92520DFE0F6C81E0D0C46383347AF8 /* SCHTTPUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPUtils.m; sourceTree = "<group>"; };
+		B042A47533DE213E22DEDB1690A254A9 /* SCHTTPRequest+Convenience.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SCHTTPRequest+Convenience.m"; path = "SCHTTPClient/SCHTTPRequest+Convenience.m"; sourceTree = "<group>"; };
+		BF3513EDF7061B656D7C8F4FA2B58598 /* SCHTTPStreamWriter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPStreamWriter.m; sourceTree = "<group>"; };
+		C010E0FC482D0E056F827B6E7F27A870 /* SCHTTPRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SCHTTPRequest.h; path = SCHTTPClient/SCHTTPRequest.h; sourceTree = "<group>"; };
+		C0C719A84958CE47F8CB2E6E5911E29A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		C34343D7FF57ED0DE66026834586242B /* SCHTTPRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SCHTTPRequest.m; path = SCHTTPClient/SCHTTPRequest.m; sourceTree = "<group>"; };
+		CD7A970EC25F9DF40C31E1741E136A94 /* SCHTTPRequestContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = SCHTTPRequestContext.m; sourceTree = "<group>"; };
+		D49C5124EE756FE41B4524CB9D215E49 /* SCHTTPClient-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SCHTTPClient-dummy.m"; sourceTree = "<group>"; };
+		DAE2E068BE69B34ABDBB0533BE4EEEFD /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		EA94AAC95D6BA8FD639C92CF5E09434D /* system.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = system.h; path = External/libcurl.OSX/system.h; sourceTree = "<group>"; };
+		EF97D3DDB0D528455A721107E8896BB7 /* SCHTTPRequest+Convenience.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SCHTTPRequest+Convenience.h"; path = "SCHTTPClient/SCHTTPRequest+Convenience.h"; sourceTree = "<group>"; };
+		F328F8BE0D86F4BE692033D6193B4F57 /* SCHTTPClient.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SCHTTPClient.xcconfig; sourceTree = "<group>"; };
+		F367295CDDF87027FA7045EC3669C15B /* SCHTTPUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPUtils.h; sourceTree = "<group>"; };
+		F6EC41D751500E4C21509FCE249B6A70 /* SCHTTPImageDecoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = SCHTTPImageDecoder.h; sourceTree = "<group>"; };
+		F73885550FD8A2CFD84A2FED511FA220 /* Pods-Sample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Sample-frameworks.sh"; sourceTree = "<group>"; };
+		FFA694D56111BCC063506C31BD71323B /* generate */ = {isa = PBXFileReference; includeInIndex = 1; name = generate; path = Docs/generate; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1514E31DE74E858850D9B184A0C63DFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA5D9416A8DB776670607BE38CF70BA4 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C04DF892940DA01B2269E52AFAE22CDD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBC126D45B4F71F41F318B1438ECD48C /* AppKit.framework in Frameworks */,
+				0434D33C8E11E38D90DCDE16D0075DDE /* Cocoa.framework in Frameworks */,
+				76308734F38E26848A8AAC89C1A9A401 /* CoreServices.framework in Frameworks */,
+				7878AC90165DDF40571523B064D31B84 /* Security.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DA4645A0634BFBD07A471AD671F4A94 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				9215C3CB02FFF1C1E99FB597C3A19CEE /* AppKit.framework */,
+				C0C719A84958CE47F8CB2E6E5911E29A /* Cocoa.framework */,
+				69F075C9646404C86E663E09F1BA53B2 /* CoreServices.framework */,
+				DAE2E068BE69B34ABDBB0533BE4EEEFD /* Security.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		2255C20C4E34AD0E1AEDE68853684563 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				FFA694D56111BCC063506C31BD71323B /* generate */,
+				85BC69FD900ABE8614E1B3958D4906D0 /* index.md */,
+				5FCE32D31FA642417B74F37BB0D65AFA /* LICENSE */,
+				0747D9D5858F29EA422D73F5D8FF2500 /* README.md */,
+				91E428148E99E51283A9E548CB926D23 /* SCHTTPClient.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		23EBEA67BEF8D6F72C48397FA5EC9847 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6602D307FBE2BE5A77398DF73B02D432 /* Pods-Sample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		320EBFBA4ED9E3D18F59D931AB45473E /* Internal */ = {
+			isa = PBXGroup;
+			children = (
+				8691A8FD54DEC8D5E48C39CC1528AD68 /* SCHTTPRequest+PrivateInterface.h */,
+				A673459DFA11C90ECBE7DD208AB76E13 /* SCHTTPRequest+PrivateInterface.m */,
+				9453CDABC3F6105CEA72E02C263246C3 /* SCHTTPRequestContext.h */,
+				CD7A970EC25F9DF40C31E1741E136A94 /* SCHTTPRequestContext.m */,
+				A8A7542655486E2290F38C8BD56E9716 /* SCHTTPRequestInternal.h */,
+				F367295CDDF87027FA7045EC3669C15B /* SCHTTPUtils.h */,
+				AF92520DFE0F6C81E0D0C46383347AF8 /* SCHTTPUtils.m */,
+				9F8F6C2C24ADA3173A1B2B109E70D4F0 /* SCJSONDictionary.h */,
+				7FF447675734403B0BCED3A583B0F735 /* SCJSONDictionary.m */,
+			);
+			name = Internal;
+			path = SCHTTPClient/Internal;
+			sourceTree = "<group>";
+		};
+		44CCC6266898AEB6B8F2EAD6B83762DC /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				96A9E9D97BA785FA06E3240204938ACE /* SCHTTP.h */,
+				3F9C0A4181DF623D20FFE850B05FA559 /* SCHTTPExecutor.h */,
+				9D465C523DCC14A4688EFA070A1F9D20 /* SCHTTPExecutor.m */,
+				C010E0FC482D0E056F827B6E7F27A870 /* SCHTTPRequest.h */,
+				C34343D7FF57ED0DE66026834586242B /* SCHTTPRequest.m */,
+				EF97D3DDB0D528455A721107E8896BB7 /* SCHTTPRequest+Convenience.h */,
+				B042A47533DE213E22DEDB1690A254A9 /* SCHTTPRequest+Convenience.m */,
+				19E58814F7DDB9D9646AF2825832BD8C /* SCHTTPResponse.h */,
+				8047EA8ED7B76B00337B70C88DC3C8BE /* SCHTTPResponse.m */,
+				D6224881C80DB2966EAF1E9F09FA0120 /* Handlers */,
+				320EBFBA4ED9E3D18F59D931AB45473E /* Internal */,
+			);
+			name = Client;
+			sourceTree = "<group>";
+		};
+		4500AFE623363A936105D805FEA1B9DD /* SCHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				44CCC6266898AEB6B8F2EAD6B83762DC /* Client */,
+				894005D7CE5C703CAD9DB55C3959B96A /* LibCurl */,
+				2255C20C4E34AD0E1AEDE68853684563 /* Pod */,
+				CB36A37BB88C9826FDB07B0A5720BBF2 /* Support Files */,
+			);
+			name = SCHTTPClient;
+			path = ../../..;
+			sourceTree = "<group>";
+		};
+		6602D307FBE2BE5A77398DF73B02D432 /* Pods-Sample */ = {
+			isa = PBXGroup;
+			children = (
+				85E691C0024271E2D0092FA1EBACE452 /* Pods-Sample.modulemap */,
+				3DF87CDBF351C0A5F8589E22A0F52C54 /* Pods-Sample-acknowledgements.markdown */,
+				44053E42CB60A20133DF16CEB2B915AB /* Pods-Sample-acknowledgements.plist */,
+				9A03CD5534147A9FD92A24DF4B311437 /* Pods-Sample-dummy.m */,
+				F73885550FD8A2CFD84A2FED511FA220 /* Pods-Sample-frameworks.sh */,
+				9AB35F64666C379279CD93A9FF22ED5D /* Pods-Sample-Info.plist */,
+				859A9C3FF8DAF43611B7457FC86B0142 /* Pods-Sample-umbrella.h */,
+				3F4CECDA38C08BEAE89304FAF8F47441 /* Pods-Sample.debug.xcconfig */,
+				0B1692077B2B61C40A9D996692389C86 /* Pods-Sample.release.xcconfig */,
+			);
+			name = "Pods-Sample";
+			path = "Target Support Files/Pods-Sample";
+			sourceTree = "<group>";
+		};
+		894005D7CE5C703CAD9DB55C3959B96A /* LibCurl */ = {
+			isa = PBXGroup;
+			children = (
+				AADE1ACD47E194C73FB9B73278D564FB /* curl.h */,
+				9E280DC60BE38379040B2B23F50981A0 /* curlver.h */,
+				1F23A9B6A796C5F9FA4A13A9017A77AF /* easy.h */,
+				A9079682DE7F6580898649828AEC0642 /* mprintf.h */,
+				0EEA3215EF11C9546F43C1B399B813B5 /* multi.h */,
+				35C228D36C32494C208A7D0DF3DAD020 /* stdcheaders.h */,
+				EA94AAC95D6BA8FD639C92CF5E09434D /* system.h */,
+				D2D18AACB16636A372990FEB46F28D83 /* Frameworks */,
+			);
+			name = LibCurl;
+			sourceTree = "<group>";
+		};
+		AB7FC065F3ADE726ED389717C132B2AF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				46D66FBB724693B89247CC78286D13F4 /* Pods_Sample.framework */,
+				360EFF6242DFBC11DC0372680C8F0239 /* SCHTTPClient.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CACE1D58B90C8B9C52757B827DFE6BF4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DA4645A0634BFBD07A471AD671F4A94 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB073A0D878E35E170D7130F226655FA /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4500AFE623363A936105D805FEA1B9DD /* SCHTTPClient */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		CB36A37BB88C9826FDB07B0A5720BBF2 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2758D511BFD32F37BFB000D5C5C1B20E /* SCHTTPClient.modulemap */,
+				F328F8BE0D86F4BE692033D6193B4F57 /* SCHTTPClient.xcconfig */,
+				D49C5124EE756FE41B4524CB9D215E49 /* SCHTTPClient-dummy.m */,
+				3E7962AD0109EB62A064C2A1823CD4F6 /* SCHTTPClient-Info.plist */,
+				9EB459E21979AD1C5F6722039455CBDE /* SCHTTPClient-prefix.pch */,
+				76CFF820A48C3E281A120F7CBDB91FF0 /* SCHTTPClient-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/OSX Sample/Pods/Target Support Files/SCHTTPClient";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				CB073A0D878E35E170D7130F226655FA /* Development Pods */,
+				CACE1D58B90C8B9C52757B827DFE6BF4 /* Frameworks */,
+				AB7FC065F3ADE726ED389717C132B2AF /* Products */,
+				23EBEA67BEF8D6F72C48397FA5EC9847 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D2D18AACB16636A372990FEB46F28D83 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6D03612A2BEF75E30F48CAB588E3CD25 /* libcurl.OSX.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6224881C80DB2966EAF1E9F09FA0120 /* Handlers */ = {
+			isa = PBXGroup;
+			children = (
+				9707A789C17CE99477CF785154126C7C /* SCHTTPAccumulator.h */,
+				55D54E4D810C770B972CF8D02DBBE868 /* SCHTTPAccumulator.m */,
+				089734BEB74A82B92FEBA498CA8DD926 /* SCHTTPContentHandler.h */,
+				31E286428160CE3CBD6BCB62D3A0EF2D /* SCHTTPFileWriter.h */,
+				2C1BC2CE9B503AA49E108C5D0CFA5ECE /* SCHTTPFileWriter.m */,
+				F6EC41D751500E4C21509FCE249B6A70 /* SCHTTPImageDecoder.h */,
+				2C8A6B31DA7146595151B84F5B504514 /* SCHTTPImageDecoder.m */,
+				4A8AB3A3DE09B416488D24120CC73DE0 /* SCHTTPSelectiveDiscarder.h */,
+				4219D428BCAAECC1D474B4DABFDBCAFA /* SCHTTPSelectiveDiscarder.m */,
+				8078110674BB3B79338569A245FFB517 /* SCHTTPStreamWriter.h */,
+				BF3513EDF7061B656D7C8F4FA2B58598 /* SCHTTPStreamWriter.m */,
+				041B44F7F0B5D801A78C5FEF8AD71077 /* SCHTTPToStringConverter.h */,
+				80A7F71322FDC37335A30B173BE102A0 /* SCHTTPToStringConverter.m */,
+				7EC166EB271DB899BA035B0B7E934C30 /* SCJSONParser.h */,
+				51C901362BA6A514EE7898BBE8367533 /* SCJSONParser.m */,
+			);
+			name = Handlers;
+			path = SCHTTPClient/Handlers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		167668F7162F8EAD2EF82D3ABAD143AA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F2F9C73C422EAB99A48C7182F900A29 /* curl.h in Headers */,
+				5CBCC1936FA06E42807F7E34458C5C4B /* curlver.h in Headers */,
+				8672D9EDE010BF828108D196E10EECA3 /* easy.h in Headers */,
+				3DADC88735FB538804D8E75ACD86E906 /* mprintf.h in Headers */,
+				550A78FA1D2A63D825EF656392BB226D /* multi.h in Headers */,
+				4FA08AD5C4C532CA842781B9CB6BCD60 /* SCHTTP.h in Headers */,
+				9ADB7632DB2919C320DD6FB7C4543C00 /* SCHTTPAccumulator.h in Headers */,
+				680929989D26708260E1ED423B25BF7E /* SCHTTPClient-umbrella.h in Headers */,
+				CBD7A87FB9CA5B091BEFACB8A7C69054 /* SCHTTPContentHandler.h in Headers */,
+				7F12CA1B9979B9886023138894BDECC6 /* SCHTTPExecutor.h in Headers */,
+				C81FB91126D8E0C48EBCDFDEC234A6BC /* SCHTTPFileWriter.h in Headers */,
+				63D6D9D95032D838D3A5F5104784365F /* SCHTTPImageDecoder.h in Headers */,
+				5939476DE070736200426C8AB0A0C831 /* SCHTTPRequest+Convenience.h in Headers */,
+				DD1CE643FEC9CDD1D4260732E3A91719 /* SCHTTPRequest+PrivateInterface.h in Headers */,
+				512659BEA0BFCF8795CFE26913405FFD /* SCHTTPRequest.h in Headers */,
+				7BE0400413BB12221597D6389C3463E1 /* SCHTTPRequestContext.h in Headers */,
+				656A86611A2069561A398ABB6248395C /* SCHTTPRequestInternal.h in Headers */,
+				5F551FA84C0DDEC49751A5136F1D7242 /* SCHTTPResponse.h in Headers */,
+				E493493A047CF5B4B4BBC7931068FAAC /* SCHTTPSelectiveDiscarder.h in Headers */,
+				6B266AF1245CC773EB63D59622F029C7 /* SCHTTPStreamWriter.h in Headers */,
+				77CE641C333B5D929B8946E6A304E790 /* SCHTTPToStringConverter.h in Headers */,
+				E34102722282843E3757AB62A55910CF /* SCHTTPUtils.h in Headers */,
+				9C6B6DD7ABA7874713676A3A2EF4C21C /* SCJSONDictionary.h in Headers */,
+				E9094F81C3D07E0D5393B7197105BB8B /* SCJSONParser.h in Headers */,
+				BB3E74F89F4CC429AEFFF1B82E0B5C51 /* stdcheaders.h in Headers */,
+				5FB87F63510C1E866EFB9444A7B6C913 /* system.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		687D2078FE9073295F2A88EDE3362775 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7EDB0459DD2C993589BF3BB52CF32E4 /* Pods-Sample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3D56F5BE8DAFC40C8A6EB6135F33F23F /* Pods-Sample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E3DCF55A14A859F5DA0DA9E1540E8EE /* Build configuration list for PBXNativeTarget "Pods-Sample" */;
+			buildPhases = (
+				687D2078FE9073295F2A88EDE3362775 /* Headers */,
+				5FE128B4BAADA6C87FA1FFAF11E8E4AF /* Sources */,
+				1514E31DE74E858850D9B184A0C63DFD /* Frameworks */,
+				90F06E08672E004E9724155E77F51409 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				332A8841F9DDB451CC6462D8C676F325 /* PBXTargetDependency */,
+			);
+			name = "Pods-Sample";
+			productName = "Pods-Sample";
+			productReference = 46D66FBB724693B89247CC78286D13F4 /* Pods_Sample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9E25F7C35EDD2CA622350C52E21332FD /* SCHTTPClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F36CF0EBF6E5DDC3543A9EFD1740C0AB /* Build configuration list for PBXNativeTarget "SCHTTPClient" */;
+			buildPhases = (
+				167668F7162F8EAD2EF82D3ABAD143AA /* Headers */,
+				6D6BDA4D338FA0403E4C2674EA0BC0E7 /* Sources */,
+				C04DF892940DA01B2269E52AFAE22CDD /* Frameworks */,
+				5573E40BB4511EB72A22FBE583C1DD2E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SCHTTPClient;
+			productName = SCHTTPClient;
+			productReference = 360EFF6242DFBC11DC0372680C8F0239 /* SCHTTPClient.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 10.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = AB7FC065F3ADE726ED389717C132B2AF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3D56F5BE8DAFC40C8A6EB6135F33F23F /* Pods-Sample */,
+				9E25F7C35EDD2CA622350C52E21332FD /* SCHTTPClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5573E40BB4511EB72A22FBE583C1DD2E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		90F06E08672E004E9724155E77F51409 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FE128B4BAADA6C87FA1FFAF11E8E4AF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7428F41CE26107D987E342FF4F30EA5A /* Pods-Sample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D6BDA4D338FA0403E4C2674EA0BC0E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5F17B3A04550AF2E97C7AD2DC9E874 /* SCHTTPAccumulator.m in Sources */,
+				A1355F47E696986E73D03F9D5095062B /* SCHTTPClient-dummy.m in Sources */,
+				5E24A490A301B30B7AD0120F0F84390C /* SCHTTPExecutor.m in Sources */,
+				503439E5F2F247969FD1B2D250823832 /* SCHTTPFileWriter.m in Sources */,
+				F12854E251304E238CA7758264E5B6B4 /* SCHTTPImageDecoder.m in Sources */,
+				40F0725C17100198CE43C1F2B8A901AA /* SCHTTPRequest+Convenience.m in Sources */,
+				E6EC398EFDC62D2B43BB47E089F3B08C /* SCHTTPRequest+PrivateInterface.m in Sources */,
+				BC83795A827F42F55506CBC84AA61684 /* SCHTTPRequest.m in Sources */,
+				18ABD8AAB068715A6F84B460A93F22AA /* SCHTTPRequestContext.m in Sources */,
+				924E7C61AB8BA66EEAFD11A7DDDC4C36 /* SCHTTPResponse.m in Sources */,
+				F5670F369949DDE5C3AD1201E38ED2AB /* SCHTTPSelectiveDiscarder.m in Sources */,
+				FF6C51CFD9822F43416C7696A311091E /* SCHTTPStreamWriter.m in Sources */,
+				433438B920D136F8F9E9CD07618D2CD0 /* SCHTTPToStringConverter.m in Sources */,
+				863F659B55E007BE0276DF66FA1C3083 /* SCHTTPUtils.m in Sources */,
+				AEA710EDEACB44E57F62BAF54A6B57CD /* SCJSONDictionary.m in Sources */,
+				3877D4076F0508669EC787D1158FFA39 /* SCJSONParser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		332A8841F9DDB451CC6462D8C676F325 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SCHTTPClient;
+			target = 9E25F7C35EDD2CA622350C52E21332FD /* SCHTTPClient */;
+			targetProxy = 4DF774D9A15C6DACE60FAA47C434F199 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08C3C699BAAD853F85B62509B8FD588B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1692077B2B61C40A9D996692389C86 /* Pods-Sample.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample/Pods-Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample/Pods-Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		509FAE95EB547E263DCC4BFFF81134A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F4CECDA38C08BEAE89304FAF8F47441 /* Pods-Sample.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-Sample/Pods-Sample-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/Pods-Sample/Pods-Sample.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5F14B856CAD788D737965259A3024EA6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7BB8DE10C539BA53701A0122399BBE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F328F8BE0D86F4BE692033D6193B4F57 /* SCHTTPClient.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SCHTTPClient/SCHTTPClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCHTTPClient/SCHTTPClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/SCHTTPClient/SCHTTPClient.modulemap";
+				PRODUCT_MODULE_NAME = SCHTTPClient;
+				PRODUCT_NAME = SCHTTPClient;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F821760CBC8FBEB597544977A563005C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F328F8BE0D86F4BE692033D6193B4F57 /* SCHTTPClient.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/SCHTTPClient/SCHTTPClient-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SCHTTPClient/SCHTTPClient-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/SCHTTPClient/SCHTTPClient.modulemap";
+				PRODUCT_MODULE_NAME = SCHTTPClient;
+				PRODUCT_NAME = SCHTTPClient;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F14B856CAD788D737965259A3024EA6 /* Debug */,
+				0A4E8437AC7C5E8A6E80920A6EEE3954 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E3DCF55A14A859F5DA0DA9E1540E8EE /* Build configuration list for PBXNativeTarget "Pods-Sample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509FAE95EB547E263DCC4BFFF81134A6 /* Debug */,
+				08C3C699BAAD853F85B62509B8FD588B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F36CF0EBF6E5DDC3543A9EFD1740C0AB /* Build configuration list for PBXNativeTarget "SCHTTPClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BB8DE10C539BA53701A0122399BBE4E /* Debug */,
+				F821760CBC8FBEB597544977A563005C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module SCHTTPClient {
+  umbrella header "SCHTTPClient-umbrella.h"
+
+  export *
+  module * { export * }
+}
