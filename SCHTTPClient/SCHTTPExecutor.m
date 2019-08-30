@@ -451,8 +451,13 @@ static BOOL SCHTTPExecutorInitialized = NO;
         curl_easy_setopt(handle, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_0);
     } else if (request.version == SCHTTPProtocolVersion_1_1) {
         curl_easy_setopt(handle, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_1_1);
-    } // else leave it up to libcurl to decide
-
+    } else if (request.version == SCHTTPProtocolVersion_2_0) {
+        curl_easy_setopt(handle, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0);
+    } else {
+        //leave it up to libcurl to decide
+        curl_easy_setopt(handle, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_NONE);
+    }
+    
     const char* verb = [request.verb UTF8String];
     curl_easy_setopt(handle, CURLOPT_CUSTOMREQUEST, verb);
 
@@ -693,9 +698,6 @@ static BOOL SCHTTPExecutorInitialized = NO;
             break;
 
         case CURLE_SSL_CIPHER: // 59
-            break;
-
-        case CURLE_SSL_CACERT: // 60
             break;
 
         case CURLE_BAD_CONTENT_ENCODING:

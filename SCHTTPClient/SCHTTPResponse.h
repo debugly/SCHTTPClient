@@ -22,8 +22,10 @@
 #pragma mark - Enums
 
 typedef NS_ENUM(NSUInteger, SCHTTPProtocolVersion) {
+    SCHTTPProtocolVersion_None = -1,
     SCHTTPProtocolVersion_1_0 = 0,
     SCHTTPProtocolVersion_1_1,
+    SCHTTPProtocolVersion_2_0
 };
 
 

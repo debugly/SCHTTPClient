@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = "SCHTTPClient"
-  s.version  = "1.0.0"
+  s.version  = "1.0.1"
   s.summary  = "A modern HTTP client framework for iOS/OSX built on top of libcurl."
   s.homepage = "https://github.com/debugly/SCHTTPClient.git"
   s.license  = { :type => "Apache License, Version 2.0", :file => "LICENSE" }
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     curl.ios.source_files = "External/libcurl.iOS/*.h"
     curl.osx.source_files = "External/libcurl.OSX/*.h"
     curl.ios.vendored_library = 'External/libcurl.iOS/libcurl.iOS.a'
-    curl.osx.vendored_library = 'External/libcurl.OSX/libcurl.OSX.a'
+    curl.osx.vendored_libraries = 'External/libcurl.OSX/libcrypto_Mac.a' ,'External/libcurl.OSX/libcurl_Mac.a' ,'External/libcurl.OSX/libnghttp2_Mac.a' ,'External/libcurl.OSX/libssl_Mac.a'    
   end
 
   s.subspec 'Client' do |c|

@@ -1,10 +1,10 @@
 PODS:
-  - SCHTTPClient (0.1.0):
-    - SCHTTPClient/Client (= 0.1.0)
-    - SCHTTPClient/LibCurl (= 0.1.0)
-  - SCHTTPClient/Client (0.1.0):
+  - SCHTTPClient (1.0.0):
+    - SCHTTPClient/Client (= 1.0.0)
+    - SCHTTPClient/LibCurl (= 1.0.0)
+  - SCHTTPClient/Client (1.0.0):
     - SCHTTPClient/LibCurl
-  - SCHTTPClient/LibCurl (0.1.0)
+  - SCHTTPClient/LibCurl (1.0.0)
 
 DEPENDENCIES:
   - SCHTTPClient (from `../../`)
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  SCHTTPClient: 120783414468820eaf7dad67844ad2c06df15e0f
+  SCHTTPClient: 718715d9ea2b9ee82880b0c0987ecacc715c9211
 
 PODFILE CHECKSUM: 792aef1e6d920c8272839ed1e665074f07f3752f
 

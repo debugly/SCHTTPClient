@@ -63,7 +63,7 @@ NSString* NSStringFromBBTransferSpeed(SCTransferSpeed transferSpeed)
 
 - (instancetype)initWithURL:(NSURL*)url andVerb:(NSString*)verb
 {
-    return [self initWithURL:url verb:verb andProtocolVersion:SCHTTPProtocolVersion_1_1];
+    return [self initWithURL:url verb:verb andProtocolVersion:SCHTTPProtocolVersion_None];
 }
 
 - (instancetype)initWithURL:(NSURL*)url verb:(NSString*)verb andProtocolVersion:(SCHTTPProtocolVersion)version;

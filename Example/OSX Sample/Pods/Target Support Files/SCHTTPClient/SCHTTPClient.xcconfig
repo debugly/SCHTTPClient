@@ -2,7 +2,7 @@ CODE_SIGN_IDENTITY =
 CONFIGURATION_BUILD_DIR = ${PODS_CONFIGURATION_BUILD_DIR}/SCHTTPClient
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/../../../External/libcurl.OSX"
-OTHER_LDFLAGS = $(inherited) -l"curl.OSX" -l"z" -framework "AppKit" -framework "CoreServices" -framework "Security"
+OTHER_LDFLAGS = $(inherited) -l"crypto_Mac" -l"curl_Mac" -l"nghttp2_Mac" -l"ssl_Mac" -l"z" -framework "AppKit" -framework "CoreServices" -framework "Security"
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
 PODS_ROOT = ${SRCROOT}

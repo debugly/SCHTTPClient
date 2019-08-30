@@ -30,6 +30,7 @@
 #import "multi.h"
 #import "stdcheaders.h"
 #import "system.h"
+#import "urlapi.h"
 
 FOUNDATION_EXPORT double SCHTTPClientVersionNumber;
 FOUNDATION_EXPORT const unsigned char SCHTTPClientVersionString[];

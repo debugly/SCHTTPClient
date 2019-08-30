@@ -48,11 +48,11 @@
 
 - (void)getImageExample
 {
-    [[SCHTTPRequest readResource:@"http://localhost/2.8/HelloWorld.png"] setup:^(id request) {
-        [request downloadContentAsImage]; // alternative to 'asImage' fluent syntax
+    [[SCHTTPRequest readResource:@"https://a1.itc.cn/pv/js/spv.1305141919.js"] setup:^(id request) {
+        [request downloadContentAsString]; // alternative to 'asImage' fluent syntax
     } execute:^(SCHTTPResponse* response) {
-        NSImage* image = response.content;
-        NSLog(@"image size: %@", NSStringFromSize(image.size));
+        NSString* js = response.content;
+        NSLog(@"js string: %ld", [js length]);
     } error:^(NSError* error) {
         NSLog(@"Error: %@", [error localizedDescription]);
     }];

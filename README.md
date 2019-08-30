@@ -1,7 +1,7 @@
 SCHTTPClient
 ======
 
-SCHTTPClient based on SCHTTP, which is a rich wrapper for **libcurl** written in Objective-C.
+SCHTTPClient based on BBHTTP, which is a rich wrapper for **libcurl** written in Objective-C.
 
 It is an ARC-only library that uses [features](http://clang.llvm.org/docs/ObjectiveCLiterals.html) introduced by Clang 3.1. Thus, it is only suitable for iOS 5+ and OSX 10.7+.
 

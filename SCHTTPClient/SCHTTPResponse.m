@@ -28,23 +28,30 @@
 NSString* NSStringFromBBHTTPProtocolVersion(SCHTTPProtocolVersion version)
 {
     switch (version) {
+        case SCHTTPProtocolVersion_None:
+        {
+            assert(false);
+            return @"";
+        }
         case SCHTTPProtocolVersion_1_0:
             return @"HTTP/1.0";
-
-        default:
+        case SCHTTPProtocolVersion_1_1:
             return @"HTTP/1.1";
+        case SCHTTPProtocolVersion_2_0:
+            return @"HTTP/2";
     }
 }
 
 SCHTTPProtocolVersion SCHTTPProtocolVersionFromNSString(NSString* string)
 {
-    if ([string isEqualToString:@"HTTP/1.0"]) {
-        return SCHTTPProtocolVersion_1_0;
-    } else {
+    if ([string isEqualToString:@"HTTP/2"]) {
+        return SCHTTPProtocolVersion_2_0;
+    } else if ([string isEqualToString:@"HTTP/1.1"]) {
         return SCHTTPProtocolVersion_1_1;
+    } else {
+        return SCHTTPProtocolVersion_1_0;
     }
 }
-
 
 
 #pragma mark -
@@ -78,15 +85,26 @@ SCHTTPProtocolVersion SCHTTPProtocolVersionFromNSString(NSString* string)
 
 + (SCHTTPResponse*)responseWithStatusLine:(NSString*)statusLine
 {
-    // TODO check size
-    NSString* versionString = [statusLine substringToIndex:8];
-    NSRange statusCodeRange = NSMakeRange(9, 3);
-    NSString* statusCodeString = [statusLine substringWithRange:statusCodeRange];
+    NSArray <NSString *>* components = [statusLine componentsSeparatedByString:@" "];
+    if ([components count] > 3){
+        NSMutableArray *temp = [components mutableCopy];
+        [temp removeObjectAtIndex:0];
+        [temp removeObjectAtIndex:0];
+        NSString *lastComponent = [temp componentsJoinedByString:@" "];
+        NSMutableArray *temp2 = [NSMutableArray arrayWithCapacity:3];
+        [temp2 addObject:components[0]];
+        [temp2 addObject:components[1]];
+        [temp2 addObject:lastComponent];
+        components = [temp2 copy];
+    }
+    
+    NSString *versionString = [components firstObject];
+    NSString* statusCodeString = [components objectAtIndex:1];
 
     SCHTTPProtocolVersion version = SCHTTPProtocolVersionFromNSString(versionString);
     NSUInteger statusCode = (NSUInteger)[statusCodeString integerValue];
 
-    NSString* message = [statusLine substringFromIndex:NSMaxRange(statusCodeRange) + 1];
+    NSString* message = [components count] > 1 ? [components objectAtIndex:2] : nil;
 
     SCHTTPResponse* response = [[self alloc] initWithVersion:version code:statusCode andMessage:message];
 

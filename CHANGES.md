@@ -1,3 +1,17 @@
+## 1.0.1
+
+* Update to libcurl 7.65.3
+* Support HTTP/2
+* Depend on
+	* OpenSSL/1.1.1c 
+	* zlib/1.2.11 
+	* nghttp2/1.39.1
+
+## 1.0.0
+
+* Update examples
+* Fix warnings
+
 ## 0.9.9
 
 #### September 26th, 2013
